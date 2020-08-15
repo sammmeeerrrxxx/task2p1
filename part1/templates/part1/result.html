@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+	<h1>{{error}}<h2>
+</head>
+<body>
+
+	{% for i in user%}	
+	<p>Name: {{i.firstname}} {{i.lastname}}</p>
+	<p>Email: {{i.email}}</p>
+	<p>Phone No: {{i.phoneno}}</p>
+	<p>Gender: {{i.gender}}</p>
+	{% endfor %}
+	<p><a href={% url 'find'%}>Look for an email ?</a></p>
+	<p><a href={% url 'register'%}>Register a new email ?</a></p>
+	
+</body>
+</html>

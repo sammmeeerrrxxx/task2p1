@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+	<h1>{{error}}<h2>
+</head>
+<body>
+	{% for i in user %}
+	Name: {{i.firstname}} {{i.lastname}}
+	Email: {{i.email}}
+	Phone No: {{i.phoneno}}
+	Gender: {{i.gender}}
+	{% endfor %}
+	
+</body>
+</html>
